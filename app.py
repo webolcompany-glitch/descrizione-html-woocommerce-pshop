@@ -8,7 +8,26 @@ st.set_page_config(
     page_title="Generatore HTML WooCommerce",
     layout="wide"
 )
+# DOWNLOAD FILE ESEMPIO
 
+try:
+
+    with open(
+        "esempio_file_input.xlsx",
+        "rb"
+    ) as file:
+
+        st.download_button(
+
+            label="📥 Scarica Excel esempio",
+
+            data=file,
+
+            file_name="esempio_file_input.xlsx",
+
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+
+        )
 
 # ==========================
 # CSS DEL TEMPLATE PRODOTTO
