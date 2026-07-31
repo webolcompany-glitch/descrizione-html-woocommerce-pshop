@@ -30,6 +30,12 @@ try:
 
         )
 
+except FileNotFoundError:
+
+    st.warning(
+        "esempio_file_input.xlsx non trovato"
+    )
+
 # ==========================
 # CSS DEL TEMPLATE PRODOTTO
 # ==========================
